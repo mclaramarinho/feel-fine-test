@@ -1,0 +1,158 @@
+:root{
+    --purple: #530475;
+    font-size: 10px !important;
+    
+}
+body{
+    font-family: 'Inter' !important;
+    color: var(--purple) !important;
+    overflow-x: hidden !important;
+    box-sizing:content-box !important;
+}  
+.space-bg{
+    width: 100vw;
+    height: 100vh;
+} 
+
+/* Navbar */
+.btn{
+    --bs-btn-font-weight: 700 !important;
+}
+
+#about{
+    display: inline-block;
+}
+#chart-1{
+    color: white !important;
+}
+
+/* BTN */
+.btn-test-now{
+    border: 1px solid white !important;
+    background-color: #530475 !important;
+    color: white !important;
+    --bs-btn-color: white !important; 
+}
+.btn-test-now:active, .btn-test-now:hover{
+    border: 1px solid #530475 !important;
+    background-color: transparent !important;
+    color: #530475 !important;
+}
+/* FONT WEIGHTS */
+.thin{
+    font-weight: 300;
+}
+.medium{
+    font-weight: 500;
+}
+.semibold{
+    font-weight: 600;
+}
+.bold{
+    font-weight: 700;
+}
+.extra-bold{
+    font-weight: 800;
+}
+.black{
+    font-weight: 900;
+}
+
+/* FONT COLORS */
+.color-purple{
+    color: var(--purple) !important;
+}
+
+/* FONT SIZES */
+.font-13{
+    font-size: 1.3rem !important;
+}
+.font-15{
+    font-size: 1.5rem !important;
+}
+.font-18{
+    font-size: 1.8rem !important;
+}
+.font-20{
+    font-size: 2rem !important;
+}
+.font-30{
+    font-size: 3rem !important;
+}
+.font-40{
+    font-size: 4rem !important;
+}
+.font-45{
+    font-size: 4.5rem !important;
+}
+.font-70{
+    font-size: 7rem !important;
+}
+/* OPACITY */
+.op-0{
+    opacity: 0 !important;
+}
+.op-4{
+    opacity: 0.4 !important;
+}
+.op-5{
+    opacity: 0.5 !important;
+}
+.op-10{
+    opacity: 1 !important;
+}
+
+/* Z-INDEX */
+.z-top{
+    z-index: 3;
+}
+
+/* WIDTH */
+.width-fit{
+    width: fit-content !important;
+}
+
+/* UTILS */
+.gutter-x-0{
+    --bs-gutter-x: 0 !important;
+}
+.border-box{
+    box-sizing: border-box !important;
+}
+.purple-bg{
+    background-color: #8845a5a1;
+    color: white;
+}
+
+@media (min-width: 1000px){
+    .hide-md{
+        display: none !important;
+    }
+    #start{
+        height: 100vh;
+    }
+    .img-start{
+        max-width: 50vh !important;
+    }
+    .charts{
+        max-width: 20vw !important;
+    }
+}
+@media (max-width: 1000px){
+    .hide-sm{
+        display: none !important;
+    }
+    #start{
+        height: auto !important;
+    }
+    .img-start{
+        min-width: 25vh !important;
+        max-width: 30vh !important;
+    }
+    .crying-baby{
+        max-width: 20vh !important;
+    }
+    .charts{
+        max-width: 60vw !important;
+    }
+}
