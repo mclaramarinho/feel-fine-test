@@ -123,6 +123,10 @@ body{
     background-color: #8845a5a1;
     color: white;
 }
+.white-bg{
+    background-color: #ffffffa1;
+    color: #530475;
+}
 
 @media (min-width: 1000px){
     .hide-md{
