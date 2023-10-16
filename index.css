@@ -38,6 +38,13 @@ body{
     background-color: transparent !important;
     color: #530475 !important;
 }
+.scroll-top{
+    width: 8vh;
+}
+.scrollspy{
+    overflow-y: auto;
+}
+
 /* FONT WEIGHTS */
 .thin{
     font-weight: 300;
@@ -106,7 +113,9 @@ body{
 .z-top{
     z-index: 3;
 }
-
+.z-low{
+    z-index: -3;
+}
 /* WIDTH */
 .width-fit{
     width: fit-content !important;
@@ -127,7 +136,9 @@ body{
     background-color: #ffffffa1;
     color: #530475;
 }
-
+.no-decoration{
+    text-decoration: none !important;
+}
 @media (min-width: 1000px){
     .hide-md{
         display: none !important;
@@ -140,6 +151,9 @@ body{
     }
     .charts{
         max-width: 20vw !important;
+    }
+    #carousel-problem{
+        width: 75% !important;
     }
 }
 @media (max-width: 1000px){
@@ -159,4 +173,27 @@ body{
     .charts{
         max-width: 60vw !important;
     }
+    #carousel-problem{
+        width: 100%;
+    }
+}
+
+@keyframes animation {
+    from {
+        opacity: 0.1;
+        transform: scale(0.7);
+        margin-left: 100%;
+        
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        margin-left: 0%;
+    }
+}
+
+.animation{
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }

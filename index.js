@@ -46,3 +46,19 @@ new Chart("chart-3", {
         }]
     }
 });
+
+const observer = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add('animation');
+      }
+    });
+  });
+  
+  const images = document.querySelectorAll('.img-to-animate');
+  images.forEach(image => {
+    observer.observe(image);
+  });

@@ -13,260 +13,266 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
+    <!-- SCROLL TOP BTN -->
+    <a href="#">
+      <img src="assets/3800_1_10-removebg-preview.png" alt="" class="position-fixed bottom-0 end-0 z-top hide-sm me-5 scroll-top">
+    </a>
+
     <!-- Background -->
-    <img src="assets/5466730.jpg" class="position-fixed w-100 h-100 space-bg op-4" alt="">
+    <img src="assets/5466730.jpg" class="position-fixed w-100 h-100 space-bg op-4 z-low" alt="">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg px-5 py-5 sticky-top">
+    <nav id="#navbar" class="navbar navbar-expand-lg px-5 py-5 sticky-top">
       <div class="container-fluid px-5 py-5">
         <a class="navbar-brand black color-purple font-30" href="#">FEEL FINE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 semibold">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bold font-20">
-            <li class="nav-item me-5">
-              <a class="nav-link active color-purple" href="#the-problem">THE PROBLEM</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link active color-purple" href="#">SOLUTION</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link active color-purple" href="#about">ABOUT US</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link active color-purple" href="#">PLANS</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link active color-purple" href="#">FAQ</a>
-            </li>
-            <li class="nav-item d-flex">
-              <a class="btn-test-now bold font-20 btn btn-lg" href="#">TEST NOW!</a>
-            </li>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bold font-20 text-center">
+              <li class="nav-item m-auto mb-3 me-lg-5">
+                <a class="nav-link color-purple" href="#the-problem">THE PROBLEM</a>
+              </li>
+              <li class="nav-item m-auto mb-3 me-lg-5">
+                <a class="nav-link  color-purple" href="#the-solution">SOLUTION</a>
+              </li>
+              <li class="nav-item m-auto mb-3 me-lg-5">
+                <a class="nav-link  color-purple" href="#plans">PLANS</a>
+              </li>
+              <li class="nav-item m-auto mb-3 me-lg-5">
+                <a class="nav-link  color-purple" href="#about">ABOUT US</a>
+              </li>
+              <li class="nav-item d-flex m-auto mb-3">
+                <a class="btn-test-now bold font-20 btn btn-lg" href="#">TEST NOW!</a>
+              </li>
           </ul>
         </div>
       </div>
-    </nav>
-    
-    <!-- START SECTION -->
-    <section id="start" class=" w-100 h-100">
-          <!-- Container for large and medium sizes-->
-          <div class="container z-top position-relative m-auto hide-sm">
-            <div class="row gutter-x-0 justify-content-center">
-              <div class="col-5">
-                <div class="row black font-70 gutter-x-0">emotional intelligence for kids in the palm of their hands</div>
-                <div class="row mt-5 gutter-x-0">
-                  <a class="bold font-20 btn btn-lg py-3 w-50 btn-test-now" href="#">TEST NOW!</a>
-                </div>
-              </div>
-              <div class="col-5 text-center">
-                <img class="img-start" src="assets/APP-MOCKUP.png" alt="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Container for small sizes-->
-          <div class="container z-top position-relative m-auto hide-md border-box pb-5">
-            <div class="row text-center">
-                <div class="row black font-45 gutter-x-0 px-5">emotional intelligence for kids in the palm of their hands</div>
-                <div class="row mt-5 gutter-x-0">
-                  <a class="bold font-20 btn btn-lg py-3 w-50 btn-test-now m-auto" href="#">TEST NOW!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-
-    <!-- THE PROBLEM -->
-    <section id="the-problem" class="purple-bg z-top position-relative py-5">
-      <div class="row gutter-x-0 black font-40 justify-content-center pt-5">THE PROBLEM</div>
-
-      <!-- Small devices -->
-      <div class="container pb-5">
-        <div class="row gutter-x-0">
-   
-          <!-- change font size dinamically -->
-          <div class="col col-12 col-lg-6 text-center mt-5 align-self-center font-13">
-            A inteligência emocional é desenvolvida desde a infância, com experiências do cotidiano e até com disciplinas escolares. Quando mal desenvolvida na infância, pode resultar, a longo prazo, em pouco autoconhecimento e gerenciamento das próprias emoções.
-          </div>
-
-          <div id="carousel-problem" class="carousel slide my-lg-0 my-5 col col-12 col-lg-6" data-bs-ride="carousel"  data-bs-touch="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <canvas id="chart-3" class="charts m-auto"></canvas>
-                <div class="row gutter-x-0 font-15 medium text-center justify-content-center w-75 m-auto mt-5">
-                  100% have access to electronic devices*
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <canvas id="chart-2" class="charts m-auto"></canvas>
-                <div class="row gutter-x-0 font-15 medium text-center justify-content-center w-75 m-auto mt-5">
-                  40% can't deal with their emotions in a healthy way*
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <canvas id="chart-1" class="charts m-auto"></canvas>
-                <div class="row gutter-x-0 font-15 medium text-center justify-content-center w-75 m-auto mt-5">
-                  20% of the children have difficulty socializing with peers*
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-lg-6 ms-lg-auto me-lg-0 m-auto justify-content-center text-center">
-            *Data collected through an online survey
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- THE SOLUTION -->
-    <section  id="the-solution" class=" z-top position-relative py-5">
-      <h2 class="row gutter-x-0 black font-40 justify-content-center pt-5">THE SOLUTION</h2>
-      <div class="container pb-5 mt-lg-5">
-        <div class="row gutter-x-0">
-          <!-- change font size dinamically -->
-          <div class="col col-12 col-lg-7 m-auto text-center mt-5 align-self-center font-15">
-            To solve the above problem, we came up with Feel Fine: a mobile app to help
-            children (ages 6-8) identify, understand and manage their emotions and feelings
-            through many activities which will stimulate socioemotional development in a fun and interactive way.
-          </div>
-
-          <div id="carouselExampleFade" class="carousel m-auto carousel-dark slide carousel-fade col col-12 col-lg-6 align-self-center">
-            <div class="carousel-inner">
-              <div class="carousel-item active align-self-center">
-                <h1 class="row bold text-center justify-content-center mt-5 mb-3">Learning path</h1>
-                <img src='assets/feat1.png' class="d-block w-50 h-75 m-auto align-self-center" alt="...">
-                <h4 class="text-center mt-5">
-                  Learn the all the essentials with quick lessons. The lesson plan will be individualized 
-                  for each child, according to their personal progress and organized with a spaced interval repetition
-                  technique.
-                </h4>
-              </div>
-              <div class="carousel-item  align-self-center">
-                <h1 class="row bold text-center justify-content-center mt-5 mb-3">Secondary Activities</h1>
-                <img src='assets/feat2.png' class="d-block w-50 h-75 m-auto align-self-center" alt="...">
-                <h4 class="text-center mt-5">
-                  Beyond the learning path, there're other activities to explore the large emotions' spectrum.
-                  Some activitied can be done whenever, and others are considered tasks and should be completed everyday.
-                </h4>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item  align-self-center">
-                  <h1 class="row bold text-center justify-content-center mt-5 mb-3">Streak Reward System</h1>
-                  <img src='assets/feat3.png' class="d-block w-50 h-75 m-auto align-self-center" alt="...">
-                  <h4 class="text-center mt-5 m-auto">
-                    To help the child stay motivated, we developed a streak system to reward the habit of 
-                    self-improvement and learning. Complete the daily tasks for 7 days to get a reward.
-                    The rewards can be <em>in-game</em> or real-world items. Also, the tasks require only 
-                    15 minutes/day (less time on the phone).
-                  </h4>
-                </div>
-                <div class="carousel-item  align-self-center">
-                  <h1 class="row bold text-center justify-content-center mt-5 mb-3">Premium Store</h1>
-                  <img src='assets/feat4.png' class="d-block w-50 h-75 m-auto align-self-center" alt="...">
-                  <h4 class="text-center mt-5">
-                    Premium accounts can purchase real-world and some <em>in-game</em> items in the premium store. 
-                    The coin used here is the XP obtained from lessons (the more you play, the more you gain). 
-                    The child can purchase playable items to play with other people and strengthen their social 
-                    skills while doing so.
-                  </h4>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="position-relative py-5 w-100 purple-bg">
       
-      <h2 class="row gutter-x-0 black font-40 justify-content-center pt-5">PLANS</h2>
+    </nav>
 
-      <div class="container mt-5 py-5">
-        <div class="row gutter-x-0">
-          <div class=" col-7 col-lg-4 m-auto purple-bg px-3 py-5">
-            <h2 class="row gutter-x-0 text-center justify-content-center bold">FREE</h2>
-            <div class="row gutter-x-0 w-75 justify-content-center text-center m-auto">
-              <img src="assets/astro-3.png" class="" alt="">
+        <!-- START SECTION -->
+        <section id="start" class=" w-100 h-100">
+              <!-- Container for large and medium sizes-->
+              <div class="container position-absolute top-50 start-50 translate-middle m-auto hide-sm">
+                <div class="row gutter-x-0 justify-content-center">
+                  <div class="col-5 ">
+                    <h1 class="row black font-70 gutter-x-0 ">emotional intelligence for kids in the palm of their hands</h1>
+                    <div class="row mt-5 gutter-x-0">
+                      <a class="bold font-20 btn btn-lg py-3 w-50 btn-test-now" href="#">TEST NOW!</a>
+                    </div>
+                  </div>
+                  <div class="col-5 text-center">
+                    <img class="img-start img-to-animate" src="assets/APP-MOCKUP.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Container for small sizes-->
+              <div class="container position-relative m-auto hide-md border-box pb-5">
+                <div class="row text-center">
+                    <h1 class="row black font-45 gutter-x-0 px-5">emotional intelligence for kids in the palm of their hands</h1>
+                    <div class="row mt-5 gutter-x-0">
+                      <a class="bold font-20 btn btn-lg py-3 w-50 btn-test-now m-auto" href="#">TEST NOW!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <!-- THE PROBLEM -->
+        <section id="the-problem" class="purple-bg position-relative py-5 img">
+          <h2 class="row gutter-x-0 black font-40 justify-content-center pt-5">THE PROBLEM</h2>
+
+          <div class="container pb-5 mt-lg-5 pt-lg-5">
+            <div class="row gutter-x-0 w-75 m-auto">
+              
+              <h3 class="col-12 col-lg-5 text-center align-self-center m-auto ms-lg-0 me-lg-auto white-bg mt-5 mt-lg-auto p-5" style=" height: 100%">
+                A inteligência emocional é desenvolvida desde a infância, com experiências do cotidiano e até com disciplinas escolares. Quando mal desenvolvida na infância, pode resultar, a longo prazo, em pouco autoconhecimento e gerenciamento das próprias emoções.
+              </h3>
+
+              <div class="my-lg-0 my-5 col col-12 col-lg-6 align-self-center">
+                <div id="carousel-problem" class="carousel slide ms-lg-auto me-lg-0 m-auto my-auto purple-bg p-5" data-bs-ride="carousel"  data-bs-touch="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <canvas id="chart-3" class="charts m-auto"></canvas>
+                      <h3 class="row gutter-x-0 medium text-center justify-content-center m-auto mt-5">
+                        100% of the children have access to electronic devices*
+                      </h3>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <canvas id="chart-2" class="charts m-auto"></canvas>
+                      <h3 class="row gutter-x-0  medium text-center justify-content-center m-auto mt-5">
+                        40% of the children can't deal with their emotions in a healthy way*
+                      </h3>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <canvas id="chart-1" class="charts m-auto"></canvas>
+                      <h3 class="row gutter-x-0  medium text-center justify-content-center m-auto mt-5">
+                        20% of the children have difficulty socializing with peers*
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="col col-12 col-lg-6 m-auto justify-content-center text-center mt-4">
+                    *Data collected through an online survey
+                  </p>
+                </div>
+              </div>
+              
+              
             </div>
-            <p class="row gutter-x-0 font-13 text-center justify-content-center">
-              In order to make emotional intelligence education available to everyone, we provide a free plan 
-              with all the features essential for a good experience in the game.
-            </p>
-            <div class="row text-center font-13 gutter-x-0">
-              <div class="col col-12 col-md-4 bold">INCLUDED</div>
-              <div class="col col-12 col-md-8 text-lg-start">Learning path + 3 secondary activities</div>
-            </div>
           </div>
+        </section>
+      
+        <!-- THE SOLUTION -->
+        <section  id="the-solution" class=" z-top position-relative py-5">
+          <h2 class="row gutter-x-0 black font-40 justify-content-center pt-5">THE SOLUTION</h2>
+          <div class="container pb-5 mt-lg-5">
+            <div class="row gutter-x-0">
+              <!-- change font size dinamically -->
+              <h3 class="col col-12 col-lg-7 m-auto text-center mt-5 align-self-center purple-bg p-5">
+                To solve the above problem, we came up with Feel Fine: a mobile app to help
+                children (ages 6-8) identify, understand and manage their emotions and feelings
+                through many activities which will stimulate socioemotional development in a fun and interactive way.
+              </h3>
 
-        <div class="col-7 col-lg-4 m-auto white-bg px-3 py-5">
-          <h2 class="row gutter-x-0 text-center justify-content-center bold">PREMIUM</h2>
-          <div class="row gutter-x-0 w-75 justify-content-center text-center m-auto">
-            <img src="assets/king-astro.png" class="" alt="">
+              <div id="carouselExampleFade" class="carousel m-auto carousel-dark slide carousel-fade col col-12 col-lg-6 align-self-center">
+                <div class="carousel-inner">
+                  <div class="carousel-item active align-self-center">
+                    <h1 class="row bold text-center justify-content-center mt-5 mb-3">Learning path</h1>
+                    <img src='assets/feat1.png' class="d-block w-50 h-75 m-auto align-self-center" alt="...">
+                    <h4 class="text-center mt-5 white-bg p-3">
+                      Learn the all the essentials with quick lessons. The lesson plan will be individualized 
+                      for each child, according to their personal progress and organized with a spaced interval repetition
+                      technique.
+                    </h4>
+                  </div>
+                  <div class="carousel-item  align-self-center">
+                    <h1 class="row bold text-center justify-content-center mt-5 mb-3">Secondary Activities</h1>
+                    <img src='assets/feat2.png' class="d-block w-50 h-75 m-auto align-self-center" alt="...">
+                    <h4 class="text-center mt-5">
+                      Beyond the learning path, there're other activities to explore the large emotions' spectrum.
+                      Some activitied can be done whenever, and others are considered tasks and should be completed everyday.
+                    </h4>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item  align-self-center">
+                      <h1 class="row bold text-center justify-content-center mt-5 mb-3">Streak Reward System</h1>
+                      <img src='assets/feat3.png' class="d-block w-50 h-75 m-auto align-self-center" alt="...">
+                      <h4 class="text-center mt-5 m-auto">
+                        To help the child stay motivated, we developed a streak system to reward the habit of 
+                        self-improvement and learning. Complete the daily tasks for 7 days to get a reward.
+                        The rewards can be <em>in-game</em> or real-world items. Also, the tasks require only 
+                        15 minutes/day (less time on the phone).
+                      </h4>
+                    </div>
+                    <div class="carousel-item  align-self-center">
+                      <h1 class="row bold text-center justify-content-center mt-5 mb-3">Premium Store</h1>
+                      <img src='assets/feat4.png' class="d-block w-50 h-75 m-auto align-self-center" alt="...">
+                      <h4 class="text-center mt-5">
+                        Premium accounts can purchase real-world and some <em>in-game</em> items in the premium store. 
+                        The coin used here is the XP obtained from lessons (the more you play, the more you gain). 
+                        The child can purchase playable items to play with other people and strengthen their social 
+                        skills while doing so.
+                      </h4>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
           </div>
-          <p class="row gutter-x-0 font-13 text-center justify-content-center">
-            All features unlocked to provide an even better gaming experience (for an afordable price).
-            Play, gain XP and purchase real-world items in the premium store!
-          </p>
-          <div class="row text-center gutter-x-0 font-13">
-            <div class="col col-12 col-md-4 bold">INCLUDED</div>
-            <div class="col col-12 col-md-8 text-lg-start">All activities + Premium Store</div>
-          </div>
-        </div>
-      </div>
+        </section>
 
-      </div>
-     </section>
-
-
-    <!-- ABOUT US -->
-    <section id="about" class="position-relative py-5 w-100 ">
-      <div class="row font-40 black justify-content-center mt-5 gutter-x-0">ABOUT US</div>
-
-      <!-- Container for large and medium sizes -->
-      <div class="container z-top position-relative m-auto hide-sm">
-        <div class="row gutter-x-0">
-          <div class="col-5">
-            <div class="row medium h-100 font-15 align-content-center">
-              lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
-            </div>
-          </div>
-          <div class="col-5 text-center m-auto">
-            <img class="img-start" src="assets/astronaut-portal.png" loading="lazy" alt="">
-          </div>
-        </div>
-      </div>
-      <!-- Container for small sizes-->
-      <div class="container z-top position-relative m-auto hide-md">
-        <div class="row m-auto gutter-x-0">
-            
-            <div class="row gutter-x-0 medium h-100 font-13 mt-5 text-center">
-              lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
-            </div>
-            <div class="row gutter-x-0 justify-content-center m-auto text-center">
-              <img class="img-start mt-5" src="assets/astronaut-portal.png" loading="lazy" alt="">
-            </div>
-          </div>
+        <!-- PRICING -->
+        <section id="plans" class="position-relative py-5 w-100 purple-bg">
           
-        </div>
-      </div>
-    </section>
+          <h2 class="row gutter-x-0 black font-40 justify-content-center pt-5">PLANS</h2>
 
-   
+          <div class="container mt-5 py-5">
+            <div class="row gutter-x-0">
+              <div class=" col-10 col-md-5 col-lg-4 m-auto purple-bg px-3 py-5">
+                <h2 class="row gutter-x-0 text-center justify-content-center bold">FREE</h2>
+                <div class="row gutter-x-0 w-75 justify-content-center text-center m-auto">
+                  <img src="assets/astro-3.png" class="img-to-animate" alt="">
+                </div>
+                <p class="row gutter-x-0 font-13 text-center justify-content-center">
+                  In order to make emotional intelligence education available to everyone, we provide a free plan 
+                  with all the features essential for a good experience in the game.
+                </p>
+                <div class="row text-center font-13 gutter-x-0">
+                  <div class="col col-12 col-md-4 bold">INCLUDED</div>
+                  <div class="col col-12 col-md-8 text-md-start">Learning path + 3 secondary activities</div>
+                </div>
+              </div>
+
+            <div class="col-10 col-md-5 col-lg-4 m-auto white-bg px-3 py-5 mt-md-0 mt-5">
+              <h2 class="row gutter-x-0 text-center justify-content-center bold">PREMIUM</h2>
+              <div class="row gutter-x-0 w-75 justify-content-center text-center m-auto">
+                <img src="assets/king-astro.png" class="img-to-animate" alt="">
+              </div>
+              <p class="row gutter-x-0 font-13 text-center justify-content-center">
+                All features unlocked to provide an even better gaming experience (for an afordable price).
+                Play, gain XP and purchase real-world items in the premium store!
+              </p>
+              <div class="row text-center gutter-x-0 font-13">
+                <div class="col col-12 col-md-4 bold">INCLUDED</div>
+                <div class="col col-12 col-md-6 text-md-start">All activities + Premium Store</div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </section>
 
 
+        <!-- ABOUT US -->
+        <section id="about" class="position-relative py-5 w-100 ">
+          <div class="row font-40 black justify-content-center mt-5 gutter-x-0">ABOUT US</div>
+
+          <!-- Container for large and medium sizes -->
+          <div class="container z-top position-relative m-auto hide-sm">
+            <div class="row gutter-x-0">
+              <div class="col-5">
+                <div class="row medium h-100 font-15 align-content-center">
+                  lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                </div>
+              </div>
+              <div class="col-5 text-center m-auto">
+                <img class="img-start img-to-animate" src="assets/astronaut-portal.png" loading="lazy" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Container for small sizes-->
+          <div class="container z-top position-relative m-auto hide-md">
+            <div class="row m-auto gutter-x-0">
+                
+                <div class="row gutter-x-0 medium h-100 font-13 mt-5 text-center">
+                  lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                </div>
+                <div class="row gutter-x-0 justify-content-center m-auto text-center">
+                  <img class="img-start mt-5 img-to-animate" src="assets/astronaut-portal.png" loading="lazy" alt="">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+    <div class="row gutter-x-0 py-3 text-center font-13 white-bg">
+        <p class="bold my-auto">Dev by <a class=" color-purple" href="https://www.linkedin.com/in/mclaramarinho/">Clara M</a></p>
+        <p class="medium my-auto">2023</p>
+    </div>
 
     <!-- LOCAL JS -->
     <script src="index.js"></script>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+
 </html>
