@@ -10,7 +10,7 @@ body{
     box-sizing:content-box !important;
 }  
 .space-bg{
-    width: 100vw;
+    width: auto;
     height: 100vh;
 } 
 
@@ -139,6 +139,18 @@ body{
 .no-decoration{
     text-decoration: none !important;
 }
+.no-bg-nav{
+    background-color: transparent;
+    padding: 4vh !important;
+}
+.bg-nav{
+    background-color: white;
+    padding: 1vh !important;
+}
+.line-2{
+    line-height: 2;
+}
+
 @media (min-width: 1000px){
     .hide-md{
         display: none !important;
@@ -175,6 +187,9 @@ body{
     }
     #carousel-problem{
         width: 100%;
+    }
+    .font-20{
+        font-size: 1.6rem !important;
     }
 }
 

@@ -62,3 +62,14 @@ const observer = new IntersectionObserver(entries => {
   images.forEach(image => {
     observer.observe(image);
   });
+
+  window.addEventListener('scroll', () =>{
+    document.querySelector('.navbar').classList.remove('no-bg-nav')
+    document.querySelector('.navbar').classList.remove('bg-nav')
+    if(scrollY >= visualViewport.height){
+        document.querySelector('.navbar').classList.add('bg-nav')
+    }
+    else{
+        document.querySelector('.navbar').classList.add('no-bg-nav')
+    }
+  })
