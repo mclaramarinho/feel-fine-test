@@ -53,7 +53,7 @@ const observer = new IntersectionObserver(entries => {
       // If the element is visible
       if (entry.isIntersecting) {
         // Add the animation class
-        entry.target.classList.add('animation');
+        entry.target.classList.add('img-animation');
       }
     });
   });
@@ -64,12 +64,14 @@ const observer = new IntersectionObserver(entries => {
   });
 
   window.addEventListener('scroll', () =>{
-    document.querySelector('.navbar').classList.remove('no-bg-nav')
-    document.querySelector('.navbar').classList.remove('bg-nav')
-    if(scrollY >= visualViewport.height){
+    
+    
+    if(scrollY > 0){
+        document.querySelector('.navbar').classList.remove('no-bg-nav')
         document.querySelector('.navbar').classList.add('bg-nav')
     }
     else{
+        document.querySelector('.navbar').classList.remove('bg-nav')
         document.querySelector('.navbar').classList.add('no-bg-nav')
     }
   })

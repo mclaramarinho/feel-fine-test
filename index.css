@@ -18,7 +18,9 @@ body{
 .btn{
     --bs-btn-font-weight: 700 !important;
 }
-
+#start{
+    height: 80vh !important;
+}
 #about{
     display: inline-block;
 }
@@ -173,7 +175,7 @@ body{
         display: none !important;
     }
     #start{
-        height: auto !important;
+        height: 80vh !important;
     }
     .img-start{
         min-width: 25vh !important;
@@ -193,7 +195,7 @@ body{
     }
 }
 
-@keyframes animation {
+@keyframes fade-in-scale {
     from {
         opacity: 0.1;
         transform: scale(0.7);
@@ -207,8 +209,25 @@ body{
     }
 }
 
-.animation{
-    animation-name: animation;
+@keyframes fade-in {
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in-anim{
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+.img-animation{
+    animation-name: fade-in-scale;
     animation-duration: 3s;
     animation-iteration-count: 1;
 }
