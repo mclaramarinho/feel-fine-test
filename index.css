@@ -10,8 +10,7 @@ body{
     box-sizing:content-box !important;
 }  
 .space-bg{
-    width: auto;
-    height: 100vh;
+    min-width: 100vw;
 } 
 
 /* Navbar */
@@ -79,9 +78,6 @@ body{
 .font-15{
     font-size: 1.5rem !important;
 }
-.font-18{
-    font-size: 1.8rem !important;
-}
 .font-20{
     font-size: 2rem !important;
 }
@@ -133,11 +129,11 @@ body{
     box-sizing: border-box !important;
 }
 .purple-bg{
-    background-color: #8845a5a1;
+    background-color: #8845a5d2;
     color: white;
 }
 .white-bg{
-    background-color: #ffffffa1;
+    background-color: #ffffffce;
     color: #530475;
 }
 .no-decoration{
@@ -145,11 +141,11 @@ body{
 }
 .no-bg-nav{
     background-color: transparent;
-    padding: 4vh !important;
+    padding: 5vh !important;
 }
 .bg-nav{
     background-color: white;
-    padding: 1vh !important;
+    padding: 2vh !important;
 }
 .line-2{
     line-height: 2;
